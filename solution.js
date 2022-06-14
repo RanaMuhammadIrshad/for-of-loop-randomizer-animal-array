@@ -10,3 +10,12 @@ Possible result..
     Billy the sheep
     Melvin the bunny
   */
+
+let animalArray = ["🐔", "🐷", "🐑", "🐰"];
+let nameArray = ["Gertrude", "Henry", "Melvin", "Billy"];
+
+for (let el of nameArray) {
+  console.log(
+    `${el} the ${animalArray[Math.floor(Math.random() * animalArray.length)]}`
+  );
+}
